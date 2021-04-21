@@ -28,4 +28,3 @@ names(happy_data) # see columns names
 #install.packages("ggplot2")
 library(ggplot2)
 ggplot(data = world.happiness.report) + geom_point(mapping = aes(x = Life.Ladder, y=Social.support)) # other combinations as well...
-
