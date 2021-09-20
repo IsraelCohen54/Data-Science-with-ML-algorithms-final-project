@@ -1,7 +1,8 @@
 # ML_bio1
-# begginer tips:
-# to clear Console do: control + L
-# to run the prog, do control + enter
+
+begginer tips:
+to clear Console do: control + L
+to run the prog, do control + enter
 
 happy_data=world.happiness.report
 names(happy_data) # see columns names
