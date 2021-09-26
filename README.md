@@ -1,4 +1,4 @@
-# ML with biology data project
+# ML with biology data final project
 
 begginer tips:
 to clear Console do: control + L
