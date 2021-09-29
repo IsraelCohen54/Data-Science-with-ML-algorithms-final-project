@@ -1,7 +1,36 @@
-#more code in PDF..
-#R codes:
+#more code in PDF...
+#loading data:
+install.packages("tidyverse")
+library (tidyverse)
+data <- read_csv("C:\\Users\\Israel\\Desktop\\ML & application to biological data analysis\\Final project\\archive\\timesData - UsedWithLabels.csv") 
 
-#2.	SVM:
+#filtering:
+data = data %>% filter(year == 2016)
+data[data==""]<-NA 
+data[data=="-"]<-NA
+data<-data[complete.cases(data),]
+
+#graphs:
+#1.
+hist(data$teaching) # plot histograma type
+#2.
+hist(data$research)
+#3.
+ggplot(data = data, mapping = aes( x=student_staff_ratio,y = teaching))   +geom_point(mapping = aes(x=student_staff_ratio, y = teaching))+geom_point(mapping  = aes(colour = research))
+#4.
+ggplot(data = data, mapping = aes(x = income, y=research))+geom_smooth(method="lm")+geom_point(mapping = aes(x = income, y=research))+geom_point(mapping  = aes(colour = teaching))
+#5.
+ggplot(data = data, mapping = aes( x=research,y = teaching)) + geom_smooth(method="lm")  +geom_point(mapping = aes(x=research, y = teaching))
+#6.
+ggplot(data = data, mapping = aes(x = income, y=research))+ geom_smooth(method="lm")   +geom_point(mapping = aes(x = income, y=research))+geom_point(mapping  = aes(colour = female_male_ratio))
+#7.
+ggplot(data = data, mapping = aes(y = research, x=world_rank))+ geom_smooth(method="lm")   +geom_point(mapping = aes(y = research, x=world_rank))+geom_point(mapping  = aes(colour = female_male_ratio))
+#8.
+best_uni =  filter(data,world_rank >=9) ggplot(data = new_data2) + geom_bar(mapping = aes(x = country))+ theme(text = element_text(size=10),  axis.text.x = element_text(angle=90, hjust=1))
+
+
+#R algorithms codes: (many script where placed together here)
+#2. SVM:
 
 library (tidyverse)
 data <- read_csv("C:\\Users\\Israel\\Desktop\\ML & application to biological data analysis\\Final project\\archive\\timesData - UsedWithLabels.csv") 
