@@ -1,6 +1,6 @@
 # python code:
 #1.	
-#Decision Tree: 
+#Decision Tree algorithm: 
 
 #py_install("pandas")
 #py_install("matplotlib")
