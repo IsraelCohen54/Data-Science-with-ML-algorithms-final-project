@@ -2,6 +2,8 @@
 # Data - University ranks from kaggle
 The project do EDA (Exploratory data analysis) and use many algorithms trying to predict university rank from other features in the data.
 
+The project was done together with Avishay Vizel and Kfir Inbal (students)
+
 <!--
 a self reminder:
 begginer tips:
