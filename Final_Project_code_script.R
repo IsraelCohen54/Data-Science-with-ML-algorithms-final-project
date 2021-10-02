@@ -3,7 +3,8 @@
 #loading data:
 install.packages("tidyverse")
 library (tidyverse)
-data <- read_csv("C:\\Users\\Israel\\Desktop\\ML & application to biological data analysis\\Final project\\archive\\timesData - UsedWithLabels.csv") 
+#data <- read_csv("C:\\Users\\Israel\\Desktop\\ML & application to biological data analysis\\Final project\\archive\\timesData - UsedWithLabels.csv") 
+data <- read_csv("\timesData - UsedWithLabels.csv") 
 
 #filtering:
 data = data %>% filter(year == 2016)
