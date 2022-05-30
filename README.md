@@ -1,4 +1,4 @@
-# ML & application to biology data final project
+# Machine Learning and application to biology data analysis final project
 
 The project do EDA (Exploratory data analysis) and use many algorithms trying to predict university rank from other features in the data.
 
